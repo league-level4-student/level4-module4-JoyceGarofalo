@@ -13,9 +13,8 @@ public abstract class Polymorph {
    	 this.setY(y);
     }
     
-    public void update(){
-   	 
-    }
+    public abstract void update();
+    	
     
     public abstract void draw(Graphics g);
     
