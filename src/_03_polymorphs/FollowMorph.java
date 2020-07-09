@@ -1,6 +1,9 @@
 package _03_polymorphs;
 
+import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 
 public class FollowMorph extends Polymorph{
 
@@ -18,7 +21,13 @@ public class FollowMorph extends Polymorph{
 	@Override
 	public void draw(Graphics g) {
 		// TODO Auto-generated method stub
-		
+		g.setColor(Color.green);
+		g.fillRect(getX(), getY(), 50, 50);
+	}
+
+	public void update(int x, int y) {
+		setX(x);
+		setY(y);
 	}
 
 }

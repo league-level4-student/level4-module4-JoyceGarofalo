@@ -3,8 +3,8 @@ package _03_polymorphs;
 import java.awt.Graphics;
 
 public abstract class Polymorph {
-    private int x;
-    private int y;
+    protected int x;
+    protected int y;
     private int width = 50;
     private int height = 50;
     

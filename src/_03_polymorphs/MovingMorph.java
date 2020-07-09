@@ -18,5 +18,7 @@ public class MovingMorph extends Polymorph{
 	public void update() {
 		setX(getX()+10);
 	}
+	
+	
 
 }
