@@ -13,16 +13,16 @@ public class FollowMorph extends Polymorph{
 	}
 
 	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public void draw(Graphics g) {
 		// TODO Auto-generated method stub
 		g.setColor(Color.green);
 		g.fillRect(getX(), getY(), 50, 50);
+	}
+	
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	public void update(int x, int y) {

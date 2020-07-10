@@ -11,6 +11,7 @@ import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
@@ -21,13 +22,13 @@ public class PolymorphWindow extends JPanel implements ActionListener, MouseList
     private JFrame window;
     private Timer timer;
     
-    BluePolymorph bluePoly = new BluePolymorph(100, 100);
-    RedMorph redPoly = new RedMorph(100, 200);
-    MovingMorph movingPoly = new MovingMorph(200, 300);
-    CircleMorph circlePoly = new CircleMorph(300, 400);
-    FollowMorph followPoly = new FollowMorph(400, 500);
-    ImageMorph imagePoly = new ImageMorph(500, 100);
-    MessageMorph messagePoly = new MessageMorph(100, 700);
+    BluePolymorph bluePoly = new BluePolymorph(100, 250);
+    RedMorph redPoly = new RedMorph(100, 400);
+    MovingMorph movingPoly = new MovingMorph(200, 250);
+    CircleMorph circlePoly = new CircleMorph(200, 200);
+    FollowMorph followPoly = new FollowMorph(200, 400);
+    ImageMorph imagePoly = new ImageMorph(300, 250);
+    MessageMorph messagePoly = new MessageMorph(300, 400);
     
     ArrayList<Polymorph> polyArray = new ArrayList<>();
     
@@ -99,13 +100,18 @@ public class PolymorphWindow extends JPanel implements ActionListener, MouseList
 	@Override
 	public void mouseMoved(MouseEvent e) {
 		// TODO Auto-generated method stub
-		followPoly.update();
-		System.out.println(e.getX() + " ," + e.getY());
+		followPoly.update(e.getX(), e.getY());
+		//System.out.println(e.getX() + " ," + e.getY());
 	}
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
+		if(e.getX() > messagePoly.getX() && e.getX() < messagePoly.getX()+messagePoly.getWidth()) {
+			if(e.getY() > messagePoly.getY() && e.getY() < messagePoly.getY()+messagePoly.getHeight()) {
+				messagePoly.update();
+			}
+		}
 		
 	}
 

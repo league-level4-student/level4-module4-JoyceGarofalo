@@ -17,6 +17,7 @@ public class MessageMorph extends Polymorph{
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
+		JOptionPane.showMessageDialog(null, "hello!");
 	}
 
 	@Override
