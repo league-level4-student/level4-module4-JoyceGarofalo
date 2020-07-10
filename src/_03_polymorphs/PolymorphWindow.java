@@ -27,7 +27,7 @@ public class PolymorphWindow extends JPanel implements ActionListener, MouseList
     MovingMorph movingPoly = new MovingMorph(200, 250);
     CircleMorph circlePoly = new CircleMorph(200, 200);
     FollowMorph followPoly = new FollowMorph(200, 400);
-    ImageMorph imagePoly = new ImageMorph(300, 250);
+    ImageMorph2 imagePoly = new ImageMorph2(300, 250);
     MessageMorph messagePoly = new MessageMorph(300, 400);
     
     ArrayList<Polymorph> polyArray = new ArrayList<>();
