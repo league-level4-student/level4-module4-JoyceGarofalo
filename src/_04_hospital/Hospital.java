@@ -10,6 +10,7 @@ public class Hospital {
 	public void addDoctor(Doctor doctor) {
 		// TODO Auto-generated method stub	
 		doctors.add(doctor);
+		////
 	}
 	
 

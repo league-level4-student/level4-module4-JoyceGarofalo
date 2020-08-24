@@ -18,6 +18,7 @@ import junit.framework.TestCase;
 public class HospitalTest extends TestCase {
 
 	Hospital testHospital = new Hospital();
+	/////
 
 	public void testAddDoctor() {                                         // done
 		testHospital.addDoctor(new GeneralPractitioner());

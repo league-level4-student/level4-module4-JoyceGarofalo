@@ -9,7 +9,7 @@ public class Patient {
 		// TODO Auto-generated method stub
 		System.out.println("pulse checked: " + pulsechecked);
 		if(pulsechecked == 1) {
-			return true;
+			return true;/////
 		}
 		return false;
 	}
