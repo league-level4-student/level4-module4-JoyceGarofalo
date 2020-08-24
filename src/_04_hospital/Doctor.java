@@ -13,7 +13,9 @@ public class Doctor {
 
 	public void doMedicine() {
 		// TODO Auto-generated method stub
-		
+		for (int i = 0; i < doctorPatients.size(); i++) {
+			doctorPatients.get(i).checkPulse();
+		}
 	}
 
 	public Object makesHouseCalls() {

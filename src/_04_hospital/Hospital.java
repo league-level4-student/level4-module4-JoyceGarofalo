@@ -15,8 +15,9 @@ public class Hospital {
 
 	public List<Doctor> getDoctors() {
 		// TODO Auto-generated method stub
-		System.out.println("hi");
-		System.out.println(doctors);    
+		//System.out.println("hi");
+		System.out.println(doctors);
+
 		return doctors;
 	}
 
@@ -33,6 +34,16 @@ public class Hospital {
 	public void assignPatientsToDoctors() {
 		// TODO Auto-generated method stub
 
+		doctors.get(0).assignPatient(patients.get(0));
+		doctors.get(0).assignPatient(patients.get(1));
+		doctors.get(0).assignPatient(patients.get(2));
+		
+		doctors.get(1).assignPatient(patients.get(3));
+		doctors.get(1).assignPatient(patients.get(4));
+		doctors.get(1).assignPatient(patients.get(5));
+		
+		doctors.get(2).assignPatient(patients.get(6));
+		doctors.get(2).assignPatient(patients.get(7));
 		
 	}
 
